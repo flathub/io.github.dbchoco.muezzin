@@ -11,7 +11,21 @@
   <project_license>MIT</project_license>
   <description>
     <p>
-      Islamic prayer times application that is highly customizable, free and open source.
+      Islamic prayer times (Adhan) and Qur'an application that is highly customizable, free and open source.
+      <ul> Features
+        <li> Multi-language support </li>
+        <li> Highly customizable (appearance and audio) </li>
+        <li> Advanced prayer times options </li>
+        <li> Qur'an reader </li>
+      </ul>
+    
+      <a href="https://github.com/DBChoco/Muezzin">Website</a>  
+      
+      <a href="https://www.reddit.com/r/Muezzin">Reddit</a>
+      
+      <a href="https://discord.gg/cpF9TTstN5">Discord</a>
+      
+      Keywords: Athan, Adhan, Azan, Islam, Muslim, Prayers, times, Muezzin, Salah, Salat, Namaz, Islamic, Hijri, Quran, Qur'an, Koran.
     </p>
   </description>
   <content_rating type="oars-1.0" />
