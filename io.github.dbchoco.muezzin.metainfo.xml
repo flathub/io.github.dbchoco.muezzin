@@ -31,20 +31,20 @@
     </screenshot>
   </screenshots>
   <releases>
-    <release version="v0.1.7" date="2022-03-31">
+    <release version="v0.2.0" date="2022/04/04">
         <description>
             <p>General</p>
             <ul>
-                <li>New in-app icons (Font-Awesome upgrade 4.7 > 6).</li>
-                <li>Auto-updater is now disabled. Replaced it with a custom made update notifier.</li>
-                <li>Prayer times table is now dynamic (changes size with windows size).</li>
-                <li>App menu is now enabled with debugging options and hard reset.</li>
-                <li>Added Urdu language</li>
+                <li>Added Qur'an reader with translations and transliterations.</li>
+                <li>You can now double-click on the system tray (Windows and macOS).</li>
+                <li>There is now a default background image for dark mode.</li>
+                <li>Added Turkish (thanks to @emrergin).</li>
+                <li>Menu bar is now hidden by default (press ALT to reveal it).</li>
             </ul>
             <p>BugFixes</p>
             <ul>
-                <li>Fixed time showing as 00:00 when 1 minute left.</li>
-                <li>Removed a few unnecessary modules</li>
+                <li>Fixed a few visual elements.</li>
+                <li>Fixed a few things in the main.js and renderer.js.</li>
             </ul>
         </description>
       </release>
