@@ -43,10 +43,6 @@ add-extensions:
     download-if: active-gl-driver
     enable-if: active-gl-driver
 
-build-options:
-  env:
-    NPM_CONFIG_LOGLEVEL: info
-
 modules:
     # --- Tools ---
   - name: unappimage
@@ -82,7 +78,6 @@ modules:
     buildsystem: simple
     build-commands:
       - |
-        set -e
         mkdir -p /app/bin
         mkdir -p /app/lib/i386-linux-gnu
         mkdir -p /app/lib/debug/lib/i386-linux-gnu
