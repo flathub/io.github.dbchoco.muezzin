@@ -4,9 +4,11 @@ runtime-version: '21.08'
 sdk: org.freedesktop.Sdk
 base: org.electronjs.Electron2.BaseApp
 base-version: '21.08'
+
 sdk-extensions:
   - org.freedesktop.Sdk.Compat.i386
   - org.freedesktop.Sdk.Extension.toolchain-i386
+  
 command: muezzin-run
 separate-locales: false
 
@@ -40,6 +42,15 @@ add-extensions:
     merge-dirs: vulkan/icd.d;glvnd/egl_vendor.d;OpenCL/vendors;lib/dri;lib/d3d;vulkan/explicit_layer.d;vulkan/implicit_layer.d
     download-if: active-gl-driver
     enable-if: active-gl-driver
+
+  x-compat-i386-opts: &compat_i386_opts
+    prepend-pkg-config-path: /app/lib32/pkgconfig:/usr/lib/i386-linux-gnu/pkgconfig
+    ldflags: -L/app/lib32
+    append-path: /usr/lib/sdk/toolchain-i386/bin
+    env:
+      CC: i686-unknown-linux-gnu-gcc
+      CXX: i686-unknown-linux-gnu-g++
+    libdir: /app/lib32
 
 build-options:
   env:
@@ -80,10 +91,14 @@ modules:
     buildsystem: simple
     build-commands:
       - |
+        set -e
+        mkdir -p /app/bin
         mkdir -p /app/lib/i386-linux-gnu
         mkdir -p /app/lib/debug/lib/i386-linux-gnu
+        mkdir -p /app/lib/i386-linux-gnu/GL
         install -Dm644 io.github.dbchoco.muezzin.png /app/share/icons/hicolor/128x128/apps/$FLATPAK_ID.png
-        install -Dm644 io.github.dbchoco.muezzin.desktop /app/share/applications/${FLATPAK_ID}.desktop
+        install -Dm644 io.github.dbchoco.muezzin.desktop /app/share/applications/${FLATPAK_ID}.
+        install -Dm644 -t /app/etc ld.so.conf
         install -Dm644 io.github.dbchoco.muezzin.metainfo.xml /app/share/metainfo/$FLATPAK_ID.appdata.xml
     sources:
       - type: inline
