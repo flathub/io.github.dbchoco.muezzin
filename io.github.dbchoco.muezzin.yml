@@ -4,17 +4,17 @@ runtime-version: '21.08'
 sdk: org.freedesktop.Sdk
 base: org.electronjs.Electron2.BaseApp
 base-version: '21.08'
+command: muezzin-run
+separate-locales: false
 
 sdk-extensions:
   - org.freedesktop.Sdk.Compat.i386
   - org.freedesktop.Sdk.Extension.toolchain-i386
-  
-command: muezzin-run
-separate-locales: false
 
 finish-args:
   - --share=ipc
   - --socket=x11
+  - --socket=wayland
   - --socket=pulseaudio
   - --share=network
   - --allow=multiarch
@@ -42,15 +42,6 @@ add-extensions:
     merge-dirs: vulkan/icd.d;glvnd/egl_vendor.d;OpenCL/vendors;lib/dri;lib/d3d;vulkan/explicit_layer.d;vulkan/implicit_layer.d
     download-if: active-gl-driver
     enable-if: active-gl-driver
-
-  x-compat-i386-opts: &compat_i386_opts
-    prepend-pkg-config-path: /app/lib32/pkgconfig:/usr/lib/i386-linux-gnu/pkgconfig
-    ldflags: -L/app/lib32
-    append-path: /usr/lib/sdk/toolchain-i386/bin
-    env:
-      CC: i686-unknown-linux-gnu-gcc
-      CXX: i686-unknown-linux-gnu-g++
-    libdir: /app/lib32
 
 build-options:
   env:
