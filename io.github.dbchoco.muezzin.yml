@@ -5,14 +5,19 @@ sdk: org.freedesktop.Sdk
 base: org.electronjs.Electron2.BaseApp
 base-version: '21.08'
 sdk-extensions:
-  - org.freedesktop.Sdk.Extension.node14
+  - org.freedesktop.Sdk.Compat.i386
+  - org.freedesktop.Sdk.Extension.toolchain-i386
 command: muezzin-run
 separate-locales: false
+
 finish-args:
   - --share=ipc
   - --socket=x11
   - --socket=pulseaudio
   - --share=network
+  - --allow=multiarch
+  - --device=all
+  - --talk-name=org.freedesktop.Notifications
 
 add-extensions:
   org.freedesktop.Platform.Compat.i386:
@@ -25,9 +30,9 @@ add-extensions:
     no-autodownload: true
 
 build-options:
-  append-path: /usr/lib/sdk/node14/bin
   env:
     NPM_CONFIG_LOGLEVEL: info
+
 modules:
     # --- Tools ---
   - name: unappimage
