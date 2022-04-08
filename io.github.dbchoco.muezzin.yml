@@ -10,12 +10,8 @@ separate-locales: false
 finish-args:
   - --share=ipc
   - --socket=x11
-  - --socket=wayland
   - --socket=pulseaudio
   - --share=network
-  - --allow=multiarch
-  - --device=all
-  - --talk-name=org.freedesktop.Notifications
 
 modules:
     # --- Tools ---
@@ -52,20 +48,10 @@ modules:
     buildsystem: simple
     build-commands:
       - |
-        mkdir -p /app/bin
-        mkdir -p /app/lib/i386-linux-gnu
-        mkdir -p /app/lib/debug/lib/i386-linux-gnu
-        mkdir -p /app/lib/i386-linux-gnu/GL
         install -Dm644 io.github.dbchoco.muezzin.png /app/share/icons/hicolor/128x128/apps/$FLATPAK_ID.png
         install -Dm644 io.github.dbchoco.muezzin.desktop /app/share/applications/${FLATPAK_ID}.desktop
-        install -Dm644 -t /app/etc ld.so.conf
         install -Dm644 io.github.dbchoco.muezzin.metainfo.xml /app/share/metainfo/$FLATPAK_ID.appdata.xml
     sources:
-      - type: inline
-        dest-filename: ld.so.conf
-        contents: |
-          /app/lib32
-          /app/lib/i386-linux-gnu
       - type: file
         path: io.github.dbchoco.muezzin.metainfo.xml
       - type: file
