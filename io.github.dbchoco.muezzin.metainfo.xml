@@ -57,33 +57,21 @@
     </screenshot>
   </screenshots>
   <releases>
-    <release version="v2.3.1" date="2022-04-14">
+    <release version="v2.4.0" date="2022-04-18">
         <description>
           <p>Assalamou Alaykoum brothers/sisters and Ramadan Moubarak once again</p>
           <p>New features:</p>
           <ul>
-              <li>Progress bar indicating time left until prayer.</li>
-              <li>Custom Adhan for Fajr is now available (suggested by @iFarhaan).</li>
-              <li>New default Adhan by Ahmed Al-Nufeis</li>
-              <li>Qur'an audio enabled (per verse with auto-play and auto-scroll or individually).</li>
-              <li>Added Qur'an reciters to settings.</li>
-              <li>Qur'an media controls (Play - stop - volume).</li>
-          </ul>
-          <p>Small new features:</p>
-          <ul>
-              <li>Qur'an reader now shows a Bismillah line before the Surah.</li>
-              <li>Fixed Urdu translation (thanks @ShakesVision).</li>
-              <li>Pages titles changes depending on the language.</li>
-              <li>Added "About" menu button (suggested by @iFarhaan)</li>
-              <li>Added welcome message in terminal as well as time left until prayer.</li>
-              <li>File inputs are now shown as buttons (much prettier Alhamdoulillah).</li>
+              <li>Added offline Quran with English translation</li>
+              <li>Visual improvements (rounded corners, new font (except for Ar and Bn)).</li>
+              <li>Added moon phase icons to Hijri date.</li>
+              <li>Improved speed when leaving the settings.</li>
+              <li>Added V8 cache.</li>
           </ul>
           <p>BugFixes</p>
           <ul>
-              <li>Fixed a bug that made calculation methods reset after each restart of the app (noticed by @iFarhaan) </li>
-              <li>Fixed bug where 1 page of the Qur'an was not loaded.</li>
-              <li>Window is now not hidden upon minimizing. (suggested by @iFarhaan)</li>
-              <li>Fixed some Arabic translations</li>
+              <li>Fixed progress bar for Fajr prayer.</li>
+              <li>Fixed bug where time left will be displayed as X-1:59 instead of X:59</li>
           </ul>    
           <p>If there is any problem, please contact me so that I can fix it. If you have any ideas, I'd gladly hear them. Jazzakoum Allahu khairan.</p>
         </description>
