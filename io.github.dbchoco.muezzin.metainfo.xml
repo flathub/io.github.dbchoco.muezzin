@@ -57,21 +57,22 @@
     </screenshot>
   </screenshots>
   <releases>
-    <release version="v2.4.0" date="2022-04-18">
+    <release version="v2.4.3" date="2022-04-23">
         <description>
           <p>Assalamou Alaykoum brothers/sisters and Ramadan Moubarak once again</p>
+          <p>Very small update today. Make the best out of the 10 last nights!</p>
+
           <p>New features:</p>
           <ul>
-              <li>Added offline Quran with English translation</li>
-              <li>Visual improvements (rounded corners, new font (except for Ar and Bn)).</li>
-              <li>Added moon phase icons to Hijri date.</li>
-              <li>Improved speed when leaving the settings.</li>
-              <li>Added V8 cache.</li>
+              <li>Hijri date is now updated from Maghrib instead of midnight.</li>
+              <li>Added hidden Tasbih (Left-Click (or space) on top-left "Muezzin" to add 1, right click (or escape) to reset).</li>
+              <li>Made calendar button prettier.</li>
           </ul>
           <p>BugFixes</p>
           <ul>
-              <li>Fixed progress bar for Fajr prayer.</li>
-              <li>Fixed bug where time left will be displayed as X-1:59 instead of X:59</li>
+              <li>Fixed progress bar between Isha and midnight.</li>
+              <li>Cannot select text on the main page anymore (except on the time table).</li>
+              <li>Removed date format from settings (temporary) because it didn't do anything.</li>
           </ul>    
           <p>If there is any problem, please contact me so that I can fix it. If you have any ideas, I'd gladly hear them. Jazzakoum Allahu khairan.</p>
         </description>
