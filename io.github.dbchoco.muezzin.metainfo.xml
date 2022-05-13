@@ -57,24 +57,26 @@
     </screenshot>
   </screenshots>
   <releases>
-    <release version="v2.4.3" date="2022-04-23">
+    <release version="v2.5.8" date="2022-05-13">
         <description>
           <p>Assalamou Alaykoum brothers/sisters and Ramadan Moubarak once again</p>
-          <p>Very small update today. Make the best out of the 10 last nights!</p>
 
           <p>New features:</p>
           <ul>
-              <li>Hijri date is now updated from Maghrib instead of midnight.</li>
-              <li>Added hidden Tasbih (Left-Click (or space) on top-left "Muezzin" to add 1, right click (or escape) to reset).</li>
-              <li>Made calendar button prettier.</li>
+              <li>Added Qibla in settings page (middle of the footer).</li>
+              <li>Added custom times (you can input the times of your local mosque).</li>
+              <li>Added Jumuah time (friday prayer). It will automatically replace Dhuhr on Fridays.</li>
+              <li>Added calculation methods for France (12, 15 and 18), Gulf region and Russia.*</li>
+              <li>Added small blur effect on main page.</li>
           </ul>
           <p>BugFixes</p>
           <ul>
-              <li>Fixed progress bar between Isha and midnight.</li>
-              <li>Cannot select text on the main page anymore (except on the time table).</li>
-              <li>Removed date format from settings (temporary) because it didn't do anything.</li>
+              <li>Fixed Spanish and French words for "Sunrise".</li>
+              <li>Fixed some Turkish translations (thanks @emrergin).</li>
+              <li>Removed old setting import.</li>
           </ul>    
           <p>If there is any problem, please contact me so that I can fix it. If you have any ideas, I'd gladly hear them. Jazzakoum Allahu khairan.</p>
+          <p>*(no I don't support the Russian government, but I do support my Russian Muslim brothers)</p>
         </description>
       </release>
   </releases>
