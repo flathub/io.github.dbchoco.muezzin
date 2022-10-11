@@ -57,26 +57,26 @@
     </screenshot>
   </screenshots>
   <releases>
-    <release version="v2.5.8" date="2022-05-13">
+    <release version="v2.5.9" date="2022-10-11">
         <description>
-          <p>Assalamou Alaykoum brothers/sisters and Ramadan Moubarak once again</p>
+          <p>Assalamou Alaykoum brothers/sisters</p>
 
           <p>New features:</p>
           <ul>
-              <li>Added Qibla in settings page (middle of the footer).</li>
-              <li>Added custom times (you can input the times of your local mosque).</li>
-              <li>Added Jumuah time (friday prayer). It will automatically replace Dhuhr on Fridays.</li>
-              <li>Added calculation methods for France (12, 15 and 18), Gulf region and Russia.*</li>
-              <li>Added small blur effect on main page.</li>
+              <li>Added Russian language.</li>
+              <li>New alert sound.</li>
+              <li>Default background color is now dark grey (no more flash-bang effect when changing pages).</li>
+              <li>Added forward play button in Qur'an (plays from the selected verse until the end).</li>
+              <li>Qur'an audio now stops when changing Surahs.</li>
+              <li>Added Hijri date corrector.</li>
+              <li>Default language and theme are detected on first launch of the app.</li>
+              <li>New portable version for Windows (+ new MSI installer).</li>
           </ul>
           <p>BugFixes</p>
           <ul>
-              <li>Fixed Spanish and French words for "Sunrise".</li>
-              <li>Fixed some Turkish translations (thanks @emrergin).</li>
-              <li>Removed old setting import.</li>
+              <li>Fixed reload issue at midnight.</li>
           </ul>    
           <p>If there is any problem, please contact me so that I can fix it. If you have any ideas, I'd gladly hear them. Jazzakoum Allahu khairan.</p>
-          <p>*(no I don't support the Russian government, but I do support my Russian Muslim brothers)</p>
         </description>
       </release>
   </releases>
