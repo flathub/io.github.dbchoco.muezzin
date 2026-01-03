@@ -1,11 +1,11 @@
 app-id: io.github.dbchoco.muezzin
 runtime: org.freedesktop.Platform
-runtime-version: '21.08'
+runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
 base: org.electronjs.Electron2.BaseApp
-base-version: '21.08'
+base-version: '25.08'
 sdk-extensions:
-  - org.freedesktop.Sdk.Extension.node14
+  - org.freedesktop.Sdk.Extension.node20
 command: muezzin-run
 separate-locales: false
 finish-args:
@@ -14,7 +14,7 @@ finish-args:
   - --socket=pulseaudio
   - --share=network
 build-options:
-  append-path: /usr/lib/sdk/node14/bin
+  append-path: /usr/lib/sdk/node20/bin
   env:
     NPM_CONFIG_LOGLEVEL: info
 modules:
@@ -24,7 +24,7 @@ modules:
       env:
         XDG_CACHE_HOME: /run/build/muezzin/flatpak-node/cache
         npm_config_cache: /run/build/muezzin/flatpak-node/npm-cache
-        npm_config_nodedir: /usr/lib/sdk/node14
+        npm_config_nodedir: /usr/lib/sdk/node20
         npm_config_offline: 'true'
     subdir: main
     sources:
